@@ -1,5 +1,9 @@
+REPOSITOTY DESCRIPTION:
+
 This repository holds the codes and data used for the manuscript "Influence of settings and predictors in neural network model performance: a Buenos Aires air quality case"
 Authors: Ariel Scagliotti, David Margarit, Marcela Reale, and Guillermo Jorge
+
+FILES: 
 
 fnet: code for training of a multilayer perceptron feedforward and backpropagation neural network
 som: code for training a self organizing map neural network 
@@ -7,15 +11,21 @@ input: input data with predictors for fnet
 pm25acu: target variable for fnet training
 data: xlsx with complete data 
 input_som: input space for SOM training
-mvn-1.0.tar: package for self organizing maps (multivariate normals)
-nnet-0.1.13.tar: package for ANN MLP training
+quick_test: code for train a Neural Network for prediction of PM2.5 from PM10, with default parameters. 
 
-Hardware requirements:  
+QUICK TEST INSTRUCTIONS:
+Before running the code, user must import to Matlab workspace files input.mat and pm25acu.mat
+After running, the GUI appears to show training progress and final plots. User can change the number of hidden neurons (10 by default).
+
+HARDWARE REQUIREMENTS:  
 Any Intel or AMD x86-64 processor. Recommended: Any Intel or AMD x86-64 processor with four logical cores and AVX2 instruction set support... 
 ...Minimum: 3 GB of HDD space for OCTAVE only, 5-8 GB for a typical installation. Recommended: An SSD is recommended. Minimum: 4 GB. Recommended: 8 GB.
-Software requirements: GNU OCTAVE
 
-Corresponding author:
+SOFTWARE REQUIREMENTS: MATLAB 2016+. 
+Packages: Neural Network Toolbox(available in https://www.mathworks.com/matlabcentral/fileexchange/71468-neural-network-toolbox)
+          SOM Toolbox (available in http://www.cis.hut.fi/somtoolbox/)
+
+CORRESPONDING AUTHOR:
 Ariel Scagliotti
 email: ascagliotti@campus.ungs.edu.ar
 Created and available since: 2022
