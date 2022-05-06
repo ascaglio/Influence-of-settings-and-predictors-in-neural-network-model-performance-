@@ -54,7 +54,7 @@ net.layers{2}.size=1;                 %Number of output neurons
 net.layers{2}.transferFcn='purelin';  %Transfer function
 net.layers{2}.initFcn='initnw';  %Initialization function
 
-net.performFcn='rmse'; %RMSE
+net.performFcn='mse'; %MSE
 net.trainFcn='traincgf'; %Training function
 net.divideFcn='dividerand'; %Percentage of data for training, validation and test
 net.plotFcns={'plotperform','plottrainstate', 'plotregression'}; %Graphics
@@ -70,7 +70,7 @@ tar=transpose(target); %Arrangement of data according to input data configuratio
 
 net.trainParam.epochs=1000; %Epochs
 net.trainParam.goal=0;       %Performance goal
-net.trainParam.max_fail=6;   %Máximum number of fails 
+net.trainParam.max_fail=6;   %MÃ¡ximum number of fails 
 net.trainParam.min_grad=1e-7; %Minimum gradient of performance
 net.trainParam.mu=0.001; %Gain in initial training
 net.trainParam.mu_dec=0.1; %Decreasing gain factor
